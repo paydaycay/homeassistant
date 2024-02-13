@@ -569,8 +569,6 @@ action:
                                       - service: light.turn_off
                                         target:
                                           entity_id: "{{ hold_to_dim_entity }}"
-                                        data:
-                                          transition: "{{ toggle_dim_entity_transition }}"
                                 default: &action-scene-first-release-action
                                   - choose:
                                       - conditions:
